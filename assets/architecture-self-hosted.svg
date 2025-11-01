@@ -1,0 +1,50 @@
+<svg viewBox="0 0 1400 900" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .box-label { font-family: Arial, sans-serif; font-size: 14px; font-weight: bold; fill: white; }
+      .box-sublabel { font-family: Arial, sans-serif; font-size: 11px; fill: white; }
+      .section-title { font-family: Arial, sans-serif; font-size: 13px; font-weight: 600; fill: #666; text-transform: uppercase; letter-spacing: 1px; }
+      .arrow { fill: none; stroke: #7C8DB5; stroke-width: 2; }
+      .arrow-marker { fill: #7C8DB5; }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" class="arrow-marker" />
+    </marker>
+  </defs>
+
+  <text x="310" y="40" class="section-title" text-anchor="middle">Hosted on your servers</text>
+  <text x="1090" y="40" class="section-title" text-anchor="middle">Hosted on Forest Admin servers</text>
+
+  <rect x="50" y="60" width="520" height="420" rx="12" fill="none" stroke="#9999ff" stroke-width="2" stroke-dasharray="8,4" opacity="0.5"/>
+
+  <ellipse cx="310" cy="140" rx="120" ry="30" fill="#7B8FFF" stroke="#5A6FEF" stroke-width="2"/>
+  <rect x="190" y="140" width="240" height="80" fill="#7B8FFF"/>
+  <ellipse cx="310" cy="220" rx="120" ry="30" fill="#6B7FFF" stroke="#5A6FEF" stroke-width="2"/>
+  <line x1="190" y1="140" x2="190" y2="220" stroke="#5A6FEF" stroke-width="2"/>
+  <line x1="430" y1="140" x2="430" y2="220" stroke="#5A6FEF" stroke-width="2"/>
+
+  <text x="310" y="175" class="box-label" text-anchor="middle">1. YOUR DATABASE</text>
+  <text x="310" y="195" class="box-sublabel" text-anchor="middle">SQL OR NOSQL (MONGODB)</text>
+
+  <rect x="180" y="300" width="260" height="120" rx="8" fill="#8B9FFF" stroke="#6B7FEF" stroke-width="2"/>
+  <text x="310" y="345" class="box-label" text-anchor="middle">2. YOUR AGENT</text>
+  <text x="310" y="365" class="box-sublabel" text-anchor="middle">NODE.JS OR RUBY</text>
+
+  <rect x="830" y="60" width="520" height="420" rx="12" fill="none" stroke="#66cc66" stroke-width="2" stroke-dasharray="8,4" opacity="0.5"/>
+
+  <rect x="900" y="140" width="380" height="100" rx="8" fill="#5ECDC4" stroke="#4EBDB4" stroke-width="2"/>
+  <text x="1090" y="185" class="box-label" text-anchor="middle">3. FOREST ADMIN API SERVER</text>
+
+  <rect x="990" y="300" width="200" height="100" rx="8" fill="#6FDDD4" stroke="#5ECDC4" stroke-width="2"/>
+  <text x="1090" y="340" class="box-label" text-anchor="middle">4. FOREST ADMIN</text>
+  <text x="1090" y="360" class="box-label" text-anchor="middle">UI SERVER</text>
+
+  <rect x="600" y="650" width="200" height="100" rx="8" fill="#34495E" stroke="#7C8DB5" stroke-width="2"/>
+  <text x="700" y="705" class="box-label" text-anchor="middle">BROWSER</text>
+
+  <path d="M 310 220 L 310 300" class="arrow" marker-end="url(#arrowhead)"/>
+  <path d="M 440 360 L 900 190" class="arrow" marker-end="url(#arrowhead)"/>
+  <path d="M 1090 240 L 1090 300" class="arrow" marker-end="url(#arrowhead)"/>
+  <path d="M 310 420 Q 310 550 600 700" class="arrow" marker-end="url(#arrowhead)"/>
+  <path d="M 1090 400 Q 1090 550 800 700" class="arrow" marker-end="url(#arrowhead)"/>
+</svg>

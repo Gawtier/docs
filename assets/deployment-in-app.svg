@@ -1,0 +1,41 @@
+<svg viewBox="0 0 800 700" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .box-label { font-family: Arial, sans-serif; font-size: 14px; font-weight: bold; fill: white; }
+      .box-sublabel { font-family: Arial, sans-serif; font-size: 11px; fill: white; }
+      .section-title { font-family: Arial, sans-serif; font-size: 13px; font-weight: 600; fill: #333; }
+      .arrow { fill: none; stroke: #7C8DB5; stroke-width: 2; }
+      .arrow-marker { fill: #7C8DB5; }
+    </style>
+    <marker id="arrow-in-app" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" class="arrow-marker" />
+    </marker>
+  </defs>
+
+  <text x="400" y="30" class="section-title" text-anchor="middle" font-size="16px" font-weight="bold">IN-APP DEPLOYMENT</text>
+  <text x="400" y="50" class="section-title" text-anchor="middle" fill="#666">Single process - Same port (3000)</text>
+
+  <rect x="100" y="80" width="600" height="420" rx="12" fill="none" stroke="#8B9FFF" stroke-width="3" stroke-dasharray="8,4"/>
+  <text x="120" y="105" class="section-title" font-weight="bold">YOUR APPLICATION (Port 3000)</text>
+
+  <rect x="140" y="140" width="520" height="100" rx="8" fill="#A8B8FF" stroke="#7B8FFF" stroke-width="2"/>
+  <text x="400" y="175" class="box-label" text-anchor="middle">YOUR APP CODE</text>
+  <text x="400" y="195" class="box-sublabel" text-anchor="middle">API Routes (/api/*) • Business Logic • Services</text>
+
+  <rect x="140" y="260" width="520" height="100" rx="8" fill="#9BA8E8" stroke="#7B8FFF" stroke-width="2"/>
+  <text x="400" y="295" class="box-label" text-anchor="middle">FOREST ADMIN AGENT (INTEGRATED)</text>
+  <text x="400" y="315" class="box-sublabel" text-anchor="middle">Uses Your ORM Models • Shares Services • Mounted on /forest-admin/*</text>
+
+  <text x="400" y="390" class="section-title" text-anchor="middle" font-size="12px" fill="#666">Same Process • Shared Connection Pool • Same Port</text>
+
+  <ellipse cx="400" cy="570" rx="140" ry="40" fill="#7B8FFF" stroke="#5A6FEF" stroke-width="2"/>
+  <rect x="260" y="570" width="280" height="70" fill="#7B8FFF"/>
+  <ellipse cx="400" cy="640" rx="140" ry="40" fill="#6B7FFF" stroke="#5A6FEF" stroke-width="2"/>
+  <line x1="260" y1="570" x2="260" y2="640" stroke="#5A6FEF" stroke-width="2"/>
+  <line x1="540" y1="570" x2="540" y2="640" stroke="#5A6FEF" stroke-width="2"/>
+  
+  <text x="400" y="605" class="box-label" text-anchor="middle">YOUR DATABASE</text>
+  <text x="400" y="625" class="box-sublabel" text-anchor="middle">Outside the application</text>
+
+  <path d="M 400 500 L 400 530" class="arrow" marker-end="url(#arrow-in-app)"/>
+</svg>
